@@ -8,25 +8,47 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <form id="login-form" class="hidden">
-      <input required maxlength="15" type="text" placeholder="Name" />
-      <input type="submit" value="Log in" />
-    </form>
+    <!--content 1-->
+    <div id="header">
+      <form id="login-form" class="hidden">
+        <input required maxlength="15" type="text" placeholder="Name" />
+        <input type="submit" value="Log in" />
+      </form>
+      <span id="greeting" class="hidden"></span>
+      <!--날씨-->
+      <div id="weather">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
 
-    <!--clock-->
-    <h2 id="clock">00:00</h2>
-    <h1 id="greeting" class="hidden"></h1>
+    <!--content 2-->
+    <div id="main">
+      <!--clock-->
+      <div class="main__column1">
+        <span id="clock">00:00</span>
+      </div>
 
-    <!--To Do-->
-    <form id="todo-form">
-      <input type="text" placeholder="Write a To Do and Press Enter" required />
-    </form>
-    <ul id="todo-list"></ul>
+      <!--To Do-->
+      <div class="main__column2">
+        <form id="todo-form">
+          <input
+            type="text"
+            placeholder="Write a To Do and Press Enter!"
+            required
+          />
+        </form>
+        <ul id="todo-list"></ul>
+      </div>
 
-    <!--명언-->
-    <div id="quote">
-      <span></span>
-      <span></span>
+      <!--명언-->
+      <div class="main__column3">
+        <div id="quote">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </div>
 
     <script src="js/greeting.js"></script>
@@ -34,5 +56,6 @@
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
   </body>
 </html>

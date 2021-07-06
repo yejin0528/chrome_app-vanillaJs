@@ -8,7 +8,7 @@ const USERNAME_KEY = "username";
 
 //greeting 호출 함수
 function paintGreeting(username){
-    greeting.innerText = `Hello, ${username}`;
+    greeting.innerText = `Hello, ${username}!`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 

@@ -1,6 +1,6 @@
 const quotes = [
     {
-        quote: "Remeber, you're the one who can fill the world with sunshine.",
+        quote: "Remember, you're the one who can fill the world with sunshine.",
         author: "Snow White and The Seven Dwarves",
     },
     {
@@ -27,4 +27,4 @@ const author = document.querySelector("#quote span:last-child");
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
 quote.innerText = todaysQuote.quote;
-author.innerText = todaysQuote.author;
+//author.innerText = todaysQuote.author;
